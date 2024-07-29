@@ -54,41 +54,23 @@ const NoticeInner = (props: InnerProps) => {
     type === "info" ? (
       message
     ) : (
-      <Box sx={{ width: 328, display: "flex", alignItems: "center" }}>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
         {type === "error" && <ErrorRounded color="error" />}
         {type === "success" && <CheckCircleRounded color="success" />}
 
         <Typography
           component="span"
           sx={{ ml: 1, wordWrap: "break-word", width: "calc(100% - 35px)" }}
-        >
-          {message}
-        </Typography>
+        ></Typography>
       </Box>
     );
 
   return (
-    <Snackbar
-      open={visible}
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      autoHideDuration={duration}
-      onClose={onAutoClose}
-      message={msgElement}
-      sx={{
-        maxWidth: 360,
-        ".MuiSnackbarContent-root": {
-          bgcolor: isDark ? "#50515C" : "#ffffff",
-          color: isDark ? "#ffffff" : "#000000",
-        },
-      }}
-      TransitionComponent={(p) => <Slide {...p} direction="left" />}
-      transitionDuration={200}
-      action={
-        <IconButton size="small" color="inherit" onClick={onBtnClose}>
-          <CloseRounded fontSize="inherit" />
-        </IconButton>
-      }
-    />
+    <div className="message-container">
+      {type === "error" && <ErrorRounded color="error" />}
+      {type === "success" && <CheckCircleRounded color="success" />}
+      <div>{message}</div>
+    </div>
   );
 };
 

@@ -12,8 +12,6 @@ import { routers } from "./_routers";
 import { getAxios } from "@/services/api";
 import { useVerge } from "@/hooks/use-verge";
 
-import iconLight from "@/assets/image/icon_light.svg?react";
-import iconDark from "@/assets/image/icon_dark.svg?react";
 import { useThemeMode } from "@/services/states";
 import { Notice } from "@/components/base";
 import { LayoutItem } from "@/components/layout/layout-item";
