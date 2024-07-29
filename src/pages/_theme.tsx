@@ -3,11 +3,11 @@ const OS = getSystem();
 
 // default theme setting
 export const defaultTheme = {
-  primary_color: "#007AFF",
+  primary_color: "#443EF7",
   secondary_color: "#FC9B76",
   primary_text: "#000000",
   secondary_text: "#3C3C4399",
-  info_color: "#007AFF",
+  info_color: "#443EF7",
   error_color: "#FF3B30",
   warning_color: "#FF9500",
   success_color: "#06943D",
@@ -20,13 +20,13 @@ export const defaultTheme = {
 // dark mode
 export const defaultDarkTheme = {
   ...defaultTheme,
-  primary_color: "#0A84FF",
+  primary_color: "#443EF7",
 
   secondary_color: "#FF9F0A",
   primary_text: "#aaa",
   background_color: "#181818",
   secondary_text: "#888888",
-  info_color: "#0A84FF",
+  info_color: "#443EF7",
   error_color: "#FF453A",
   warning_color: "#FF9F0A",
   success_color: "#30D158",

@@ -225,10 +225,10 @@ const SettingVerge = ({ onError }: Props) => {
         </GuardState>
       </SettingItem>
 
-      <SettingItem
+      {/* <SettingItem
         onClick={() => themeRef.current?.open()}
         label={t("Theme Setting")}
-      />
+      /> */}
 
       <SettingItem
         onClick={() => layoutRef.current?.open()}
@@ -256,7 +256,7 @@ const SettingVerge = ({ onError }: Props) => {
 
       <SettingItem onClick={openLogsDir} label={t("Open Logs Dir")} />
 
-      <SettingItem onClick={onCheckUpdate} label={t("Check for Updates")} />
+      {/* <SettingItem onClick={onCheckUpdate} label={t("Check for Updates")} /> */}
 
       <SettingItem onClick={openDevTools} label={t("Open Dev Tools")} />
 
@@ -268,7 +268,7 @@ const SettingVerge = ({ onError }: Props) => {
       />
 
       <SettingItem label={t("Verge Version")}>
-        <Typography sx={{ py: "7px", pr: 1 }}>v{version}</Typography>
+        <Typography sx={{ py: "7px", pr: 1, fontSize: 12 }}>最新版</Typography>
       </SettingItem>
     </SettingList>
   );

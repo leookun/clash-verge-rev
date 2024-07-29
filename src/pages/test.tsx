@@ -22,8 +22,6 @@ import { TestItem } from "@/components/test/test-item";
 import { emit } from "@tauri-apps/api/event";
 import { nanoid } from "nanoid";
 
-// test icons
-import apple from "@/assets/image/test/apple.svg?raw";
 import github from "@/assets/image/test/github.svg?raw";
 import google from "@/assets/image/test/google.svg?raw";
 import youtube from "@/assets/image/test/youtube.svg?raw";
@@ -40,18 +38,6 @@ const TestPage = () => {
 
   // test list
   const testList = verge?.test_list ?? [
-    {
-      uid: nanoid(),
-      name: "Apple",
-      url: "https://www.apple.com",
-      icon: apple,
-    },
-    {
-      uid: nanoid(),
-      name: "GitHub",
-      url: "https://www.github.com",
-      icon: github,
-    },
     {
       uid: nanoid(),
       name: "Google",

@@ -23,9 +23,9 @@ export const BaseEmpty = (props: Props) => {
         color: alpha(palette.text.secondary, 0.75),
       })}
     >
-      <InboxRounded sx={{ fontSize: "4em" }} />
-      <Typography sx={{ fontSize: "1.25em" }}>{t(`${text}`)}</Typography>
-      {extra}
+      {/* <InboxRounded sx={{ fontSize: "4em" }} />
+      <Typography sx={{ fontSize: "14px" }}>{t(`${text}`)}</Typography>
+      {extra} */}
     </Box>
   );
 };

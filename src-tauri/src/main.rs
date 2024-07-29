@@ -11,6 +11,7 @@ mod feat;
 mod utils;
 
 use crate::utils::{init, resolve, server};
+use tauri::{api, SystemTray};
 
 fn main() -> std::io::Result<()> {
     // 单例检测
@@ -124,7 +125,7 @@ fn main() -> std::io::Result<()> {
         tauri::RunEvent::ExitRequested { api, .. } => {
             api.prevent_exit();
         }
- 
+
         tauri::RunEvent::WindowEvent { label, event, .. } => {
             if label == "main" {
                 match event {

@@ -51,7 +51,7 @@ export const ProfileBox = styled(Box)(
       ...borderSelect,
       borderRadius: "8px",
       color,
-      "& h2": { color: h2color },
+      "& h2": { color: h2color, fontSize: "1rem" },
     };
   }
 );

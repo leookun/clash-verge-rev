@@ -80,7 +80,7 @@ export const LayoutTraffic = () => {
 
   /* --------- meta memory information --------- */
 
-  const displayMemory = verge?.enable_memory_usage ?? true;
+  const displayMemory = verge?.enable_memory_usage ?? false;
 
   const { data: memory = { inuse: 0 } } = useSWRSubscription<
     MemoryUsage,

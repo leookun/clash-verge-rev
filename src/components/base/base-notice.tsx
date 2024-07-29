@@ -97,8 +97,9 @@ export const Notice: NoticeInstance = (props) => {
 
   const onUnmount = () => {
     root.unmount();
-    if (parent) setTimeout(() => parent.removeChild(container), 500);
+    if (parent) setTimeout(() => parent.removeChild(container), 2000);
   };
+  setTimeout(onUnmount, 500);
 
   root.render(<NoticeInner {...props} onClose={onUnmount} />);
 };
