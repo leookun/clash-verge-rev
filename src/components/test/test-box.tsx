@@ -4,7 +4,7 @@ export const TestBox = styled(Box)(({ theme, "aria-selected": selected }) => {
   const { mode, primary, text } = theme.palette;
   const key = `${mode}-${!!selected}`;
 
-  const backgroundColor = mode === "light" ? "#ffffff" : "#282A36";
+  const backgroundColor = mode === "light" ? "#ffffff" : "#181818";
 
   const color = {
     "light-true": text.secondary,

@@ -84,7 +84,7 @@ pub fn toggle_system_proxy() {
     });
 }
 
-// 切换tun模式
+// 切换增强模式
 pub fn toggle_tun_mode() {
     let enable = Config::verge().data().enable_tun_mode;
     let enable = enable.unwrap_or(false);

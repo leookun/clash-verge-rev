@@ -84,7 +84,7 @@ impl CoreManager {
     pub async fn run_core(&self) -> Result<()> {
         let config_path = Config::generate_file(ConfigType::Run)?;
 
-        // 关闭tun模式
+        // 关闭增强模式
         let mut disable = Mapping::new();
         let mut tun = Mapping::new();
         tun.insert("enable".into(), false.into());
@@ -224,7 +224,7 @@ impl CoreManager {
 
     /// 停止核心运行
     pub async fn stop_core(&self) -> Result<()> {
-        // 关闭tun模式
+        // 关闭增强模式
         let mut disable = Mapping::new();
         let mut tun = Mapping::new();
         tun.insert("enable".into(), false.into());

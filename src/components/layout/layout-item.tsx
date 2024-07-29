@@ -26,9 +26,12 @@ export const LayoutItem = (props: Props) => {
         selected={!!match}
         sx={[
           {
-            borderRadius: 2,
+            borderRadius: 1,
+            paddingTop: 0.2,
+            paddingBottom: 0.2,
             marginLeft: 1.25,
             paddingLeft: 1,
+
             paddingRight: 1,
             marginRight: 1.25,
             "& .MuiListItemText-primary": {
@@ -53,17 +56,21 @@ export const LayoutItem = (props: Props) => {
         onClick={() => navigate(to)}
       >
         {(menu_icon === "monochrome" || !menu_icon) && (
-          <ListItemIcon sx={{ color: "text.primary", marginLeft: "6px" }}>
+          <ListItemIcon
+            sx={{ color: "text.primary", marginLeft: "6px" }}
+            data-menu-icon
+          >
             {icon[0]}
           </ListItemIcon>
         )}
         {menu_icon === "colorful" && <ListItemIcon>{icon[1]}</ListItemIcon>}
         <ListItemText
           sx={{
-            textAlign: "center",
+            textAlign: "left",
+            paddingLeft: "20px",
             marginLeft: menu_icon === "disable" ? "" : "-35px",
           }}
-          primary={children}
+          primary={<span style={{ fontSize: "14px" }}>{children}</span>}
         />
       </ListItemButton>
     </ListItem>

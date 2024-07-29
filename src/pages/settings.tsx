@@ -32,45 +32,14 @@ const SettingPage = () => {
   const isDark = mode === "light" ? false : true;
 
   return (
-    <BasePage
-      title={t("Settings")}
-      header={
-        <ButtonGroup variant="contained" aria-label="Basic button group">
-          <IconButton
-            size="medium"
-            color="inherit"
-            title={t("Manual")}
-            onClick={toGithubDoc}
-          >
-            <HelpOutlineRounded fontSize="inherit" />
-          </IconButton>
-          <IconButton
-            size="medium"
-            color="inherit"
-            title={t("TG Channel")}
-            onClick={toTelegramChannel}
-          >
-            <Telegram fontSize="inherit" />
-          </IconButton>
-
-          <IconButton
-            size="medium"
-            color="inherit"
-            title={t("Github Repo")}
-            onClick={toGithubRepo}
-          >
-            <GitHub fontSize="inherit" />
-          </IconButton>
-        </ButtonGroup>
-      }
-    >
+    <BasePage title={t("Settings")}>
       <Grid container spacing={{ xs: 1.5, lg: 1.5 }}>
         <Grid item xs={12} md={6}>
           <Box
             sx={{
               borderRadius: 2,
               marginBottom: 1.5,
-              backgroundColor: isDark ? "#282a36" : "#ffffff",
+              backgroundColor: isDark ? "#181818" : "#ffffff",
             }}
           >
             <SettingSystem onError={onError} />
@@ -78,7 +47,7 @@ const SettingPage = () => {
           <Box
             sx={{
               borderRadius: 2,
-              backgroundColor: isDark ? "#282a36" : "#ffffff",
+              backgroundColor: isDark ? "#181818" : "#ffffff",
             }}
           >
             <SettingClash onError={onError} />
@@ -88,7 +57,7 @@ const SettingPage = () => {
           <Box
             sx={{
               borderRadius: 2,
-              backgroundColor: isDark ? "#282a36" : "#ffffff",
+              backgroundColor: isDark ? "#181818" : "#ffffff",
             }}
           >
             <SettingVerge onError={onError} />

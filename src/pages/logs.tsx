@@ -91,7 +91,7 @@ const LogPage = () => {
         sx={{
           margin: "10px",
           borderRadius: "8px",
-          bgcolor: isDark ? "#282a36" : "#ffffff",
+          bgcolor: isDark ? "#181818" : "#ffffff",
         }}
       >
         {filterLogs.length > 0 ? (

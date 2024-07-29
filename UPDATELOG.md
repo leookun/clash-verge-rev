@@ -254,7 +254,7 @@
 - url-test 支持手动选择、节点组 fixed 节点使用角标展示 [#840](https://github.com/clash-verge-rev/clash-verge-rev/pull/840)
 - Clash 配置、Merge 配置提供 JSON Schema 语法支持、连接界面调整 [#887](https://github.com/clash-verge-rev/clash-verge-rev/pull/887)
 - 修改 Merge 配置文件默认内容 [#889](https://github.com/clash-verge-rev/clash-verge-rev/pull/889)
-- 修改 tun 模式默认 mtu 为 1500，老版本升级，需在 tun 模式设置下“重置为默认值”。
+- 修改 增强模式默认 mtu 为 1500，老版本升级，需在 增强模式设置下“重置为默认值”。
 - 使用 npm 安装 meta-json-schema [#895](https://github.com/clash-verge-rev/clash-verge-rev/pull/895)
 - 更新部分翻译 [#904](https://github.com/clash-verge-rev/clash-verge-rev/pull/904)
 - 支持 ico 格式的任务栏图标
@@ -273,9 +273,9 @@
 
 ### 已知问题（历史遗留问题，暂未找到有效解决方案）
 
-- MacOS M 芯片下服务模式无法安装；临时解决方案：在内核 ⚙️ 下，手动授权，再打开 tun 模式。
+- MacOS M 芯片下服务模式无法安装；临时解决方案：在内核 ⚙️ 下，手动授权，再打开 增强模式。
 - MacOS 下如果删除过网络配置，会导致无法正常打开系统代理；临时解决方案：使用浏览器代理插件或手动配置系统代理。
-- Window 拨号连接下无法正确识别并打开系统代理；临时解决方案：使用浏览器代理插件或使用 tun 模式。
+- Window 拨号连接下无法正确识别并打开系统代理；临时解决方案：使用浏览器代理插件或使用 增强模式。
 
 ---
 
@@ -349,7 +349,7 @@
 - 优化 UI 各种细节
 - 提供菜单栏图标样式切换选项(单色/彩色/禁用)
 - 添加自动检查更新开关
-- MacOS 开启 Tun 模式自动修改 DNS
+- MacOS 开启 增强模式自动修改 DNS
 - 调整可拖动区域(尝试修复触摸屏无法拖动的问题)
 
 ---
@@ -418,7 +418,7 @@
 
 - 保存窗口最大化状态
 - Proxy Provider 显示数量
-- 不再提供 32 位安装包（因为 32 位经常出现各种奇怪问题，比如 tun 模式无法开启；现在系统也几乎没有 32 位了）
+- 不再提供 32 位安装包（因为 32 位经常出现各种奇怪问题，比如 增强模式无法开启；现在系统也几乎没有 32 位了）
 
 ### Bugs Fixes
 
@@ -584,7 +584,7 @@
 ### Features
 
 - 移除页面切换动画
-- 更改 Tun 模式托盘图标颜色
+- 更改 增强模式托盘图标颜色
 - Portable 版本默认使用当前目录作为配置文件目录
 - 禁用 Clash 字段过滤时隐藏 Clash 字段选项
 - 优化拖拽时光标样式

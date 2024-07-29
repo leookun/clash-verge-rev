@@ -19,7 +19,7 @@ import { Notice } from "@/components/base";
 import { LayoutItem } from "@/components/layout/layout-item";
 import { LayoutControl } from "@/components/layout/layout-control";
 import { LayoutTraffic } from "@/components/layout/layout-traffic";
-import { UpdateButton } from "@/components/layout/update-button";
+
 import { useCustomTheme } from "@/components/layout/use-custom-theme";
 import getSystem from "@/utils/get-system";
 import "dayjs/locale/ru";
@@ -136,30 +136,6 @@ const Layout = () => {
           ]}
         >
           <div className="layout__left">
-            <div className="the-logo" data-tauri-drag-region="true">
-              <div
-                style={{
-                  height: "27px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                }}
-              >
-                <SvgIcon
-                  component={isDark ? iconDark : iconLight}
-                  style={{
-                    height: "36px",
-                    width: "36px",
-                    marginTop: "-3px",
-                    marginRight: "5px",
-                    marginLeft: "-3px",
-                  }}
-                  inheritViewBox
-                />
-                <LogoSvg fill={isDark ? "white" : "black"} />
-              </div>
-              {<UpdateButton className="the-newbtn" />}
-            </div>
-
             <List className="the-menu">
               {routers.map((router) => (
                 <LayoutItem

@@ -142,15 +142,6 @@ export const LayoutTraffic = () => {
 
   return (
     <Box position="relative">
-      {trafficGraph && pageVisible && (
-        <div
-          style={{ width: "100%", height: 60, marginBottom: 6 }}
-          onClick={trafficRef.current?.toggleStyle}
-        >
-          <TrafficGraph ref={trafficRef} />
-        </div>
-      )}
-
       <Box display="flex" flexDirection="column" gap={0.75}>
         <Box title={t("Upload Speed")} {...boxStyle}>
           <ArrowUpwardRounded

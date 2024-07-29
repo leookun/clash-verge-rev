@@ -15,7 +15,7 @@ export const ConnectionTable = (props: Props) => {
   const { connections, onShowDetail } = props;
   const mode = useThemeMode();
   const isDark = mode === "light" ? false : true;
-  const backgroundColor = isDark ? "#282A36" : "#ffffff";
+  const backgroundColor = isDark ? "#181818" : "#ffffff";
 
   const [columnVisible, setColumnVisible] = useState<
     Partial<Record<keyof IConnectionsItem, boolean>>

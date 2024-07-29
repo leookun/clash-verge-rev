@@ -51,7 +51,7 @@ impl Tray {
                 "system_proxy",
                 t!("System Proxy", "系统代理"),
             ))
-            .add_item(CustomMenuItem::new("tun_mode", t!("TUN Mode", "Tun 模式")))
+            .add_item(CustomMenuItem::new("tun_mode", t!("TUN Mode", "增强模式")))
             .add_item(CustomMenuItem::new(
                 "copy_env",
                 t!("Copy Env", "复制环境变量"),
@@ -270,11 +270,11 @@ impl Tray {
             if *tun_mode {
                 let _ = tray
                     .get_item("tun_mode")
-                    .set_title(t!("TUN Mode  ✔", "Tun 模式  ✔"));
+                    .set_title(t!("TUN Mode  ✔", "增强模式  ✔"));
             } else {
                 let _ = tray
                     .get_item("tun_mode")
-                    .set_title(t!("TUN Mode", "Tun 模式"));
+                    .set_title(t!("TUN Mode", "增强模式"));
             }
         }
 
@@ -299,7 +299,7 @@ impl Tray {
             "Clash Verge {version}\n{}: {}\n{}: {}\n{}: {}",
             t!("System Proxy", "系统代理"),
             switch_map[system_proxy],
-            t!("TUN Mode", "Tun 模式"),
+            t!("TUN Mode", "增强模式"),
             switch_map[tun_mode],
             t!("Curent Profile", "当前订阅"),
             current_profile_name

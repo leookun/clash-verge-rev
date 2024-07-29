@@ -21,10 +21,11 @@ export const defaultTheme = {
 export const defaultDarkTheme = {
   ...defaultTheme,
   primary_color: "#0A84FF",
+
   secondary_color: "#FF9F0A",
-  primary_text: "#FFFFFF",
-  background_color: "#2E303D",
-  secondary_text: "#EBEBF599",
+  primary_text: "#aaa",
+  background_color: "#181818",
+  secondary_text: "#888888",
   info_color: "#0A84FF",
   error_color: "#FF453A",
   warning_color: "#FF9F0A",
