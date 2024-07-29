@@ -63,7 +63,7 @@ export const ProxyItemMini = (props: Props) => {
           alignItems: "center",
         },
         ({ palette: { mode, primary } }) => {
-          const bgcolor = mode === "light" ? "#ffffff" : "#24252f";
+          const bgcolor = mode === "light" ? "#ffffff" : "#181818";
           const showDelay = delay > 0;
           const selectColor = mode === "light" ? primary.main : primary.light;
 
@@ -185,7 +185,7 @@ export const ProxyItemMini = (props: Props) => {
               ":hover": { bgcolor: alpha(palette.primary.main, 0.15) },
             })}
           >
-            Check
+            检查
           </Widget>
         )}
 
